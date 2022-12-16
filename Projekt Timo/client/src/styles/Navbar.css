@@ -1,0 +1,94 @@
+/* !important übeschreibt die vordefinierte navbar Klasse von react-bootstrap*/
+.navMod{
+  background-color: #23707D;
+  min-height: 123.017px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;  
+  
+  
+}
+
+.navContainer{
+  max-width: 1080px !important;
+  min-height: 83.0167px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+}
+
+.navBrand{
+  width: 270px !important;
+  min-height: 83.0167px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 300px;
+  
+}
+
+.navImg{
+  width: 216px !important;
+  height: 88px !important;
+}
+
+.navToogle{
+  margin-right: 16px;
+ 
+}
+
+
+.navCollContainer{
+  width: 450px !important;
+  min-height: 83.0167px !important;
+  
+  
+}
+
+
+.navElements{
+  background-color: #23707D;
+  padding-left: 8px !important;
+  font-family: 'Roboto Mono',sans-serif;
+  justify-content: left !important;
+  font-size: 14px;
+  
+  
+}
+
+
+
+.navLinkBody{
+  color: white !important;
+  padding-left: 12px !important;
+  
+  
+  
+}
+
+/*MEDIA QUERRIES
+
+
+@media screen and (max-width: 851px) {
+
+  .navMod{
+    max-width: 851px !important;
+    background-color: red;
+
+  }
+
+  .navContainer{
+    max-width: 1080px !important;
+   
+  }
+
+  .navCollContainer{
+    width: 450px !important;
+    min-height: 83.0167px !important;
+
+    background-color: blue !important;
+    
+    
+  }
+
+}
+
+*/

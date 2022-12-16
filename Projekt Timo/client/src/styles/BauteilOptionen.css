@@ -1,0 +1,69 @@
+@media screen and (max-width: 851px) {
+
+  /*Layout Buttons in Bauteiloptionen*/
+  .buttonOptionen{
+    font-size: 18px !important;
+    width: 110px !important;
+    margin-bottom: 1em !important;
+    margin-top: 1em !important;
+
+  }
+
+  .rowTableContentHistorie{
+    justify-content: left !important;
+    margin-left: 0.5rem  !important;
+    margin-right: 0px !important;
+    transform: scale(0.84);/*0.84*/
+  }
+
+  .tableContentHistorie{
+    background-color: red !important;
+    
+    
+  }
+
+
+}
+
+@media screen and (min-width: 852px) {
+  .rowTableContentHistorie{
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem  !important;
+  }
+  
+}
+
+
+
+
+
+
+
+
+/*MEDIA QUERRIES
+
+
+@media screen and (max-width: 851px) {
+
+  .navMod{
+    max-width: 851px !important;
+    background-color: red;
+
+  }
+
+  .navContainer{
+    max-width: 1080px !important;
+   
+  }
+
+  .navCollContainer{
+    width: 450px !important;
+    min-height: 83.0167px !important;
+
+    background-color: blue !important;
+    
+    
+  }
+
+}
+*/

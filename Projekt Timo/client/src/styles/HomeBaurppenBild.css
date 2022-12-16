@@ -1,0 +1,15 @@
+.HomeBaurppenBild{
+ max-width: 518px;
+ border-radius: .3rem;
+}
+
+/*max-width: 350, da sonst Bild mit 518px zu zu groß*/
+
+
+@media screen and (max-width: 852px) {
+  .HomeBaurppenBild{
+    max-width: 350px;
+    border-radius: .3rem;
+   }
+  
+}

@@ -1,0 +1,27 @@
+p{
+  padding-bottom: 1em;
+}
+
+a.datenschutzLink:link
+{
+    color:#2ea3f2;
+    text-decoration: none; 
+}
+
+a.datenschutzLink:visited
+{
+    color:#2ea3f2;
+    text-decoration: none; 
+}
+
+a.datenschutzLink:hover 
+{
+    color:#2ea3f2;
+    text-decoration: none; 
+}
+
+a.datenschutzLink:active 
+{
+    color:#2ea3f2;
+    text-decoration: none; 
+}
