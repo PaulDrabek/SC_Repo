@@ -15,39 +15,7 @@
         margin-left: 5cm;
       }
     </style>
-    <script>
-      import React, { useState, useContext } from "react";
-import Createuser from "../Createuser";
-import { RestaurantsContext } from "../context/RestaurantsContext";
-      const AddRestaurant = () => {
-  const { addRestaurants } = useContext(RestaurantsContext);
-  const [name, setName] = useState("");
-  const [location, setLocation] = useState("");
-  const [priceRange, setPriceRange] = useState("Price Range");
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await Createuser.post("/", {
-        userid, 
-        vorname, 
-        nachname, 
-        matrikelnummer, 
-        plz, 
-        ort, 
-        strasse, 
-        hausnummer, 
-        studiengang, 
-        passwort
-      });
-      console.log(response.data.data);
-      AddCreateuser(response.data.data.restaurant);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-    </script>
-</head>
+    </head>
 
 <body>
 <!-- Always shows a header, even in smaller screens. -->
@@ -80,27 +48,27 @@ import { RestaurantsContext } from "../context/RestaurantsContext";
       <div class="page-content">
         <form onsubmit="addWrite()">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" type="text" name="userid" id="nachnamefield">
+              <input class="mdl-textfield__input" type="text" name="userid" id="userid">
               <label class="mdl-textfield__label" for="sample1">E-Mail</label>
             </div>
         </form
 
         <form onsubmit="addWrite()">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" type="text" name="vorname" id="nachnamefield">
+              <input class="mdl-textfield__input" type="text" name="vorname" id="vorname">
               <label class="mdl-textfield__label" for="sample1">Vorname</label>
             </div>
         </form
             
         <form onsubmit="addWrite()">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" type="text" name="nachname" id="nachnamefield">
+              <input class="mdl-textfield__input" type="text" name="nachname" id="nachname">
               <label class="mdl-textfield__label" for="sample2">Nachname</label>
             </div>
           </form>
           <form action="#">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" type="integer" name="matrikelnummer" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+              <input class="mdl-textfield__input" type="integer" name="matrikelnummer" pattern="-?[0-9]*(\.[0-9]+)?" id="matrikelnummer">
               <label class="mdl-textfield__label" for="sample4">Matrikelnummer ()</label>
               <span class="mdl-textfield__error">Bitte geben Sie eine Zahl ein</span>
             </div>
@@ -108,7 +76,7 @@ import { RestaurantsContext } from "../context/RestaurantsContext";
 
           <form action="#">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" type="integer" name="plz" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+              <input class="mdl-textfield__input" type="integer" name="plz" pattern="-?[0-9]*(\.[0-9]+)?" id="plz">
               <label class="mdl-textfield__label" for="sample4">Postleitzahl ()</label>
               <span class="mdl-textfield__error">Bitte geben Sie eine Zahl ein</span>
             </div>
@@ -117,21 +85,21 @@ import { RestaurantsContext } from "../context/RestaurantsContext";
 
             <form onsubmit="addWrite()">
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="text" name="ort" id="nachnamefield">
+                <input class="mdl-textfield__input" type="text" name="ort" id="ort">
                 <label class="mdl-textfield__label" for="sample3">Wohnort</label>
               </div>
             </form>
 
             <form onsubmit="addWrite()">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" type="text" name="strasse" id="nachnamefield">
+                  <input class="mdl-textfield__input" type="text" name="strasse" id="strasse">
                   <label class="mdl-textfield__label" for="sample3">Straße</label>
                 </div>
               </form>
 
               <form action="#">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" type="integer" name="hausnummer" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+                  <input class="mdl-textfield__input" type="integer" name="hausnummer" pattern="-?[0-9]*(\.[0-9]+)?" id="hausnummer">
                   <label class="mdl-textfield__label" for="sample4">Hausnummer</label>
                   <span class="mdl-textfield__error">Bitte geben Sie eine Zahl ein</span>
                 </div>
@@ -139,24 +107,70 @@ import { RestaurantsContext } from "../context/RestaurantsContext";
 
               <form onsubmit="addWrite()">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" type="text" name="studiengang" id="nachnamefield">
+                  <input class="mdl-textfield__input" type="text" name="studiengang" id="studiengang">
                   <label class="mdl-textfield__label" for="sample3">Studiengang</label>
                 </div>
               </form>
 
               <form onsubmit="addWrite()">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" type="text" name="passwort" id="nachnamefield">
+                  <input class="mdl-textfield__input" type="text" name="passwort" id="passwort">
                   <label class="mdl-textfield__label" for="sample3">Passwort</label>
                 </div>
               </form>
 
               
             
-              <button onClick={handleSubmit} type="submit" class="mdl-button mdl-js-button">
-                Speichern
-                
+              <button onClick={handleSubmit} type="submit" id="sichern-button" class="mdl-button mdl-js-button">
+                Sichern
               </button>
+              <script>
+                const sichernButton = document.getElementById('sichern-button');
+                const userid = document.getElementById('userid');
+                const vorname = document.getElementById('vorname');
+                const nachname = document.getElementById('nachname');
+                const matrikelnummer = document.getElementById('matrikelnummer');
+                const plz = document.getElementById('plz');
+                const ort = document.getElementById('ort');
+                const strasse = document.getElementById('strasse');
+                const hausnummer = document.getElementById('hausnummer');
+                const studiengang = document.getElementById('studiengang');
+                const passwort = document.getElementById('passwort');
+
+                sichernButton.addEventListener('click', function() {
+                // URL der POST-Anfrage
+                const url = "http://localhost:4000/api/v1/createuser";
+            
+                // Daten, die in der POST-Anfrage gesendet werden sollen
+                const data = {
+                  userid,
+                  vorname,
+                  nachname,
+                  matrikelnummer,
+                  plz,
+                  ort,
+                  strasse,
+                  hausnummer,
+                  studiengang,
+                  passwort
+                };
+            
+                // Optionen für die POST-Anfrage
+                const options = {
+                  method: 'POST',
+                  body: JSON.stringify(data),
+                  headers: {
+                    'Content-Type': 'application/json'
+                  }
+                };
+            
+                // Absenden der POST-Anfrage
+                fetch(url, options)
+                  .then(response => response.json())
+                  .then(data => console.log(data))
+                  .catch(error => console.error(error));
+              });
+            </script>
               
       </div>
     </main>

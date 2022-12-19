@@ -1,18 +1,15 @@
 require("dotenv").config()
 const express = require("express");
 const db = require('./db');
-
 const morgan = require("morgan");
 const app = express();
-
-
 app.use(express.json());
 
 //get all Offers
-app.get("/api/v1/offers", async (req,res) => {
+app.get("/api/v1/offersgetall", async (req,res) => {
 
     try{
-        const offers = await db.query('Select * from offer')
+        const offers = await db.query('Select * from public.offer')
         console.log(offers);
         res.status(200).json({
          status: "success",
@@ -49,7 +46,6 @@ app.get("/api/v1/offers/:offerid", async (req,res) => {
 
 
 //Create an offer
-
 app.post("/api/v1/offers", async (req, res) => {
     console.log(req.body);
   
@@ -101,7 +97,7 @@ app.delete("/api/v1/offers/:offerid", (req,res) => {
 
 //Accounterstellung
 
-app.post("http://localhost:4000/api/v1/createuser", async (req, res) => {
+app.post("/api/v1/createuser", async (req, res) => {
     console.log(req.body);
   const {userid, vorname, nachname, matrikelnummer, plz, ort, strasse, hausnummer, studiengang, passwort} = req.body;
     try {
