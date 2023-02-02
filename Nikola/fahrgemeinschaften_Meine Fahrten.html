@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <style>
       .mdl-button {
         width: 6cm;
@@ -24,7 +26,8 @@
 </head>
 
 <body>
-<!-- Always shows a header, even in smaller screens. -->
+<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
@@ -54,25 +57,17 @@
     </div>
     <main class="mdl-layout__content">
       <div class="page-content">
+        <div id="root"></div>
+
     <div>
+    
 
 
     <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="">Angebot löschen</a>
     <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="">Fahrt ändern</a>
     <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="">Mitfahrt löschen</a>
-        
+    <script FahrgemeinschaftenListe from src="../../Nico/client/public/src/components/Fahrgemeinschaftenliste"></script>
 
-     <!-- Colored raised button
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-    Angebot löschen
-  </button>
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-    Fahrt ändern
-  </button>
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-    Fahrt löschen
-  </button> -->
-  
       </div>
     </main>
   </div>
