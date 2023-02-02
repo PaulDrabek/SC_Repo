@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lerngruppe gruenden</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    
+    <style>
+      .mdl-layout__content {
+        margin-top: 2cm;
+        margin-left: 2cm;
+      }
+
+      button.mdl-button {
+        margin-left: 60px;
+      }
+
+    </style>
+</head>
+
+<body>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Lerngruppen</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="Startseite.html">Startseite</a>  
+          <a class="mdl-navigation__link" href="https://www.hs-esslingen.de/">HS Esslingen</a>
+          <a class="mdl-navigation__link" href="Impressum_V1.html">Impressum</a>
+          <a class="mdl-navigation__link" href="Registrierung.html">Registrierung</a>
+          <a class="mdl-navigation__link" href="Log-In.html">Log-In</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Menü</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="Fahrgemeinschaft Aktionen_V2.html">Fahrgemeinschaften</a>
+        <a class="mdl-navigation__link" href="Lerngruppe_Aktionen_Seite1.html">Lerngruppen</a>
+        <a class="mdl-navigation__link" href="vvs.html">VVS</a>
+        <a class="mdl-navigation__link" href="Mensa_Auslastung.html">Mensa</a>
+        <a class="mdl-navigation__link" href="E-Parkplätze.html">E-Parkplätze</a>
+      </nav>
+    </div>
+
+
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <form onsubmit="addWrite()">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="nachnamefield">
+              <label class="mdl-textfield__label" for="sample1">Fach</label>
+            </div>
+          </form>
+        
+
+        <form onsubmit="addWrite()">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="nachnamefield">
+              <label class="mdl-textfield__label" for="sample3">Datum</label>
+            </div>
+        </form>
+
+        <form onsubmit="addWrite()">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="nachnamefield">
+                <label class="mdl-textfield__label" for="sample3">Ort</label>
+            </div>
+        </form>
+
+            
+            
+        <button type="submit" class="mdl-button mdl-js-button">
+          Speichern
+        </button>
+              
+      </div>
+    </main>
+  </div>
+</body>
+</html>
